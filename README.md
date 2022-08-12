@@ -1,6 +1,9 @@
 ## 4Bank - Frontend-Javascript
-### Frontend que consume a <b><a href="https://github.com/ManoelPradoMark22/ContaBancaria-JavaSpringApp">API-Java-Spring</a></b>
 <img src="./logo.png" width="149" height="80"/>
+
+---
+
+### Frontend que consume a <b><a href="https://github.com/ManoelPradoMark22/ContaBancaria-JavaSpringApp">API-Java-Spring</a></b>
 
 <br />
 <img src="./print1.png"/>
