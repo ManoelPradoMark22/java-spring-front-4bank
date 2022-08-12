@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorveteria Chaplin</title>
+
+    <!-- aos css cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- google fonts cdn link  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500&family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <a href="#inicio" class="logo"><img src="images/chaplinlogoPNG.png" alt=""></a>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a class="active" href="#inicio">Início</a></li>
+            <li><a href="#balance">Balanço</a></li>
+            <li><a href="#transactions">Transações</a></li>
+            <li><a href="#solidaryaccount">Conta solidária</a></li>
+        </ul>
+    </nav>
+
+</header>
+<!-- header section ends -->
+
+<div class="bagDiv">
+    <div class="insideBagDiv">
+        <i class="material-icons" style="font-size:30px">person</i>
+    </div>
+</div>
+
+<!-- home section starts  -->
+
+<section class="home" id="inicio">
+
+    <div class="content" data-aos="fade-right">
+        <h3 id="foryou"> <span>4</span>Bank<span> ...</span> 4<span>you</span></h3>
+        <p style="margin-bottom: 10px;">O Seu Banco Digital!</p>
+        <a href="#balance"><button class="btn" id="createAccount">Criar Conta Corrente</button></a>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- LOGIN MODAL -->
+<div id="myLoginModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="closeModal">&times;</span>
+      <div class="modalBody">
+        <h3>
+          LOGIN
+        </h3>
+        <div id="inputsModal">
+          <div id="divInput">
+            <label for="cpfLogin">CPF</label>
+            <input type="text" name="cpfLogin" maxlength="11" class="box" id="cpfLogin" value="" placeholder="Digite o CPF: ">
+          </div>
+
+          <button id="buttonLogar" class="confirmModal" type="button" class="botaoconfirma">
+            LOGAR
+          </button>
+        </div>
+        <a id="mudarParaCadastro" class="linkChangeModal">Cadastre-se</a>
+      </div>
+    </div>
+</div>
+
+<!-- CADASTRO MODAL -->
+<div id="myCadastroModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="closeModal">&times;</span>
+      <div class="modalBody">
+        <h3>
+          CADASTRO
+        </h3>
+        <div id="inputsModal">
+          <div id="divInput">
+            <label for="nomeCadastro" >Nome</label>
+            <input type="text" id="nomeCadastro" placeholder="Digite o nome: "/>
+          </div>
+
+          <div id="divInput">
+            <label for="cpfCadastro">CPF</label>
+            <input type="text" name="cpfcadastro" maxlength="11" class="box" id="cpfCadastro" value="" placeholder="Digite o CPF: ">
+          </div>
+
+          <div id="divInput">
+            <label for="telefoneCadastro">Telefone</label>
+            <input type="text" name="telefoneCadastro" maxlength="11" class="box" id="telefoneCadastro" value="" placeholder="Digite o telefone: ">
+          </div>
+
+          <div id="divInput">
+            <label>Style</label>
+            <div>
+              <input id="radioClassic" class="styleRadio" name="styleAccount" value="Classic" type="radio" checked>
+              <label for="radioBlack">Classic</label><br>
+            </div>
+            <div>
+              <input id="radioParty" class="styleRadio" name="styleAccount" value="Party" type="radio">
+              <label for="radioParty">Party</label><br>
+            </div>
+            <div>
+              <input id="radioBlack" class="styleRadio" name="styleAccount" value="Black" type="radio">
+              <label for="radioBlack">Black</label><br>
+            </div>
+          </div>
+
+          <div id="divInput">
+            <label for="selectAgencies">Agencias</label>
+            <select type="text" id="selectAgencies"></select>
+          </div>
+          <button id="buttonCadastrar" class="confirmModal" type="button" class="botaoconfirma">
+            Cadastrar
+          </button>
+        </div>
+
+        <a id="mudarParaCadastro" class="linkChangeModal">Login</a>
+      </div>
+    </div>
+</div>
+
+<!-- BALANCE section starts  -->
+
+<section class="menu" id="balance">
+
+<h1 class="heading" data-aos="fade-down"> Balanço das <span>Contas</span> </h1>
+<br>
+<h3 id="agencia" class="heading" data-aos="fade-down"></h3>
+<h5 id="complementoAgencia" data-aos="fade-down"></h5>
+
+<div id="divBalance" data-aos="fade-down">
+</div>
+
+<div id="divAccounts" data-aos="fade-down">
+    
+</div>
+
+<!--<hr class="hrCustom" data-aos="fade-right">-->
+
+</section>
+
+<!--*************************-->
+
+<!-- TRANSACTIONS section starts  -->
+
+<section class="menu" id="transactions">
+    <h3 class="heading" data-aos="fade-down">Transações</h3>
+    <br>
+    <div class='list' style="width: 100%; text-align: center;" data-aos="fade-down">
+        <h3 class="heading" id="numConta">Crie uma conta.</h3>
+    </div>
+
+    <div id="inputContainer" data-aos="fade-down">
+        <div class="inptlab1" data-aos="fade-down">
+            <label for="value_field">Valor</label>
+            <input type="text" name="priceProd" maxlength="15" class="box" id="value_field" value="" placeholder="Digite o valor (R$)">
+        </div>
+
+        <div id="containerRadios" data-aos="fade-down">
+            <div class="inptlab" >
+                <input id="radioDeposito" class="transactionRadio" type="radio" name="transactionType" value="deposito" checked>
+                <label for="radioDeposito">Depósito</label><br>
+            </div>
+            <div class="inptlab">
+                <input id="radioSaque" class="transactionRadio" type="radio" name="transactionType" value="saque">
+                <label for="radioSaque">Saque</label><br>
+            </div>
+            <div class="inptlab">
+                <input id="radioTransferencia" class="transactionRadio" type="radio" name="transactionType" value="transferencia">
+                <label for="radioTransferencia">Transferencia</label><br>
+            </div>
+          </div>
+        </div>
+
+        <div id="inputContaDestino" data-aos="fade-down">
+            <div>
+                <label for="conta_destino">Conta destino</label>
+                <input type="text" name="priceProd" maxlength="5" class="box" id="conta_destino" value="" placeholder="Digite o número da conta: ">
+            </div>
+        </div>
+        
+        <div id="buttonconfirm" data-aos="fade-down">
+            <button class="btn" type="button" id="submitButton">Confirmar</button>
+        </div>
+    </div>
+
+    <!--<hr class="hrCustom" data-aos="fade-right">-->
+</section>
+
+<!--*************************-->
+
+<section class="menu" id="solidaryaccount">
+    <h3 class="heading" data-aos="fade-down">Sua ajuda faz toda diferença!</h3>
+    <br>
+    
+    <div id="contasSolidarias" data-aos="fade-down"></div>
+
+</section>
+
+<!-- aos js cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="script.js"></script>
+
+<!-- initializing aos  -->
+
+<script>
+
+    AOS.init({
+        delay:400,
+        duration:1000
+    })
+
+</script>
+
+<script>
+    function openLanchonete(cityName) {
+      var i;
+      var x = document.getElementsByClassName("tabLanchonete");
+      for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+      }
+      document.getElementById(cityName).style.display = "flex";  
+    }
+</script>
+
+<script>
+    function openItensTabs(prodName, tabName) {
+      var i;
+      var x = document.getElementsByClassName(tabName);
+      for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+      }
+      document.getElementById(prodName).style.display = "flex";  
+    }
+</script>
+
+</body>
+</html>
